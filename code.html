@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>준형아 생일축하해</title>
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@700;900&display=swap" rel="stylesheet">
+    
+    <meta property="og:image" content="https://ifh.cc/g/3DW5PB.png">
+    <meta property="og:title" content="준형아 생일축하해">
+    <meta property="og:description" content="12월 28일이라니 말도 안됨">
+ 
+   <style>
+
+       *{
+        font-family: 'East Sea Dokdo', cursive;
+        font-family: 'Noto Sans KR', sans-serif; 
+       }
+
+        body {
+            background-color: #0f4c81;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 180px auto 0 auto;
+
+            cursor : pointer;
+        }
+
+        .msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close{
+            display:block;
+        }
+
+        .letter-open{
+            display:none;
+        }
+
+        .photo{
+            
+            width: 120px;
+            height: 120px;
+
+            background-image: url('https://ifh.cc/g/3DW5PB.png');
+            background-size : cover;
+            background-position: center;
+            
+            margin: 300px auto 0 auto;
+            border: 3px solid white;
+            box-shadow: 0px 0px 15px 0px white;
+            
+        }
+        h1 {
+            color:white;
+            text-align: center;
+            font-size: 20px;
+
+            padding:20px;
+        }
+        
+        .msgbox {
+            background-color: ivory;
+
+            width:500px;
+
+            margin: auto;
+            color:gray;
+
+            padding:30px;
+
+            font-size: 14px;
+            line-height: 25px;
+
+            box-shadow: 0px 0px 15px 0px white;
+        }
+
+        .from{
+            text-align : right;
+            margin-bottom:0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width:200px;
+                padding: 50px;
+            }
+
+            .photo{
+                width:100px;
+                height:100px;
+                margin:70px auto 0px auto;
+            }
+            .envelope{
+                margin: 150px auto 0px auto;
+            }
+        }
+
+        </style>
+
+        <script>
+            function open_letter(){
+                document.getElementsByClassName("letter-close")[0].style.display = 'none'
+                document.getElementsByClassName("letter-open")[0].style.display = 'block'
+            }
+
+           
+            function go_popda(){
+                alert('뽑다 안녕! 이제는 퐁당')
+                window.location.href='https://www.instagram.com/ppop_da/'
+
+            }
+        </script>
+</head>
+
+<body>
+    <div class ="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="msg">봉투를 열어봐!</h2>
+    </div>
+
+<div class ="letter-open">
+    <div class="photo" onclick="go_popda()"> </div>
+        <h1>동쪽에서 쫓겨난 준형공주<br />
+            생일축하해!</h1>
+
+    <div class="msgbox">
+        준형아 <br />
+        오늘은 너의 생일이구나 <br />
+        겨울에 태어나 무럭 무럭 자라서 24살 끝자락에 섰구나<br />
+        25살은 생각보다 녹록하지 않더라.<br />
+        매년 내가 먼저 나이를 먹으니 <br />
+        내년 한 해동안 살아보고 26살 후기 남겨줄게 <br />
+        오늘 생일이니 맛있는 거 먹고 잘 쉬길 바랄게 <br />
+        늘 응원해! <br />
+
+        <br />p.s/ html 배우고 이제야 써먹는<br />
+        잘가, 뽑다. 이제부터는 퐁당<br/>
+        그런의미에서 뽑다로고를 한번 눌러봐
+    
+        <p class="from">2020년 정민이가</p>
+    </div>
+
+
+</div>
+    
+
+
+    
+
+    
+
+
+</body>
+
+</html>
